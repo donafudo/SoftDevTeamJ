@@ -10,7 +10,17 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                NavigationLink(destination: PersonalEditor(personal: Personal())) {
+                    Text("Personal")
+                }
+                NavigationLink(destination: CreditsEditor(credits: [Credits]())) {
+                    Text("Credits")
+                }
+                .navigationBarTitle(Text("CourseRegistrationManager"))
+            }
+        }
     }
 }
 
