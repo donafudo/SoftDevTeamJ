@@ -6,21 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		82004510238F62D0001D7247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8200450F238F62D0001D7247 /* AppDelegate.swift */; };
-		82004512238F62D0001D7247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004511238F62D0001D7247 /* SceneDelegate.swift */; };
-		82004516238F62D5001D7247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82004515238F62D5001D7247 /* Assets.xcassets */; };
-		82004519238F62D5001D7247 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82004518238F62D5001D7247 /* Preview Assets.xcassets */; };
-		8200451C238F62D5001D7247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8200451A238F62D5001D7247 /* LaunchScreen.storyboard */; };
-		82004527238F62D5001D7247 /* CourseRegistrationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004526238F62D5001D7247 /* CourseRegistrationManagerTests.swift */; };
-		82004532238F62D5001D7247 /* CourseRegistrationManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004531238F62D5001D7247 /* CourseRegistrationManagerUITests.swift */; };
-		82004544238F6C94001D7247 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004543238F6C94001D7247 /* Home.swift */; };
-		82004546238F6DEE001D7247 /* PersonalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004545238F6DEE001D7247 /* PersonalEditor.swift */; };
-		82004548238F6FB7001D7247 /* CreditsEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004547238F6FB7001D7247 /* CreditsEditor.swift */; };
-		829BA6CF2390AEA200FAF342 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BA6CE2390AEA200FAF342 /* Credits.swift */; };
-		82C6B652238FB6A200BE220F /* Personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6B651238FB6A200BE220F /* Personal.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		82004523238F62D5001D7247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -39,24 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8200450C238F62D0001D7247 /* CourseRegistrationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseRegistrationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8200450F238F62D0001D7247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82004511238F62D0001D7247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82004515238F62D5001D7247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		82004518238F62D5001D7247 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8200451B238F62D5001D7247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8200451D238F62D5001D7247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82004522238F62D5001D7247 /* CourseRegistrationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseRegistrationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82004526238F62D5001D7247 /* CourseRegistrationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRegistrationManagerTests.swift; sourceTree = "<group>"; };
-		82004528238F62D5001D7247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8200452D238F62D5001D7247 /* CourseRegistrationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseRegistrationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82004531238F62D5001D7247 /* CourseRegistrationManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRegistrationManagerUITests.swift; sourceTree = "<group>"; };
-		82004533238F62D5001D7247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82004543238F6C94001D7247 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		82004545238F6DEE001D7247 /* PersonalEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalEditor.swift; sourceTree = "<group>"; };
-		82004547238F6FB7001D7247 /* CreditsEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsEditor.swift; sourceTree = "<group>"; };
-		829BA6CE2390AEA200FAF342 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
-		82C6B651238FB6A200BE220F /* Personal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal.swift; sourceTree = "<group>"; };
+		82F3074D2398E9E300CE61B4 /* CourseRegistrationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseRegistrationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F3074E2398E9E300CE61B4 /* CourseRegistrationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseRegistrationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F3074F2398E9E300CE61B4 /* CourseRegistrationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseRegistrationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,65 +57,18 @@
 		82004503238F62D0001D7247 = {
 			isa = PBXGroup;
 			children = (
-				8200450E238F62D0001D7247 /* CourseRegistrationManager */,
-				82004525238F62D5001D7247 /* CourseRegistrationManagerTests */,
-				82004530238F62D5001D7247 /* CourseRegistrationManagerUITests */,
-				8200450D238F62D0001D7247 /* Products */,
+				82F307532398EB0000CE61B4 /* New Group */,
+				82F3074D2398E9E300CE61B4 /* CourseRegistrationManager.app */,
+				82F3074E2398E9E300CE61B4 /* CourseRegistrationManagerTests.xctest */,
+				82F3074F2398E9E300CE61B4 /* CourseRegistrationManagerUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
-		8200450D238F62D0001D7247 /* Products */ = {
+		82F307532398EB0000CE61B4 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				8200450C238F62D0001D7247 /* CourseRegistrationManager.app */,
-				82004522238F62D5001D7247 /* CourseRegistrationManagerTests.xctest */,
-				8200452D238F62D5001D7247 /* CourseRegistrationManagerUITests.xctest */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8200450E238F62D0001D7247 /* CourseRegistrationManager */ = {
-			isa = PBXGroup;
-			children = (
-				82004543238F6C94001D7247 /* Home.swift */,
-				82004545238F6DEE001D7247 /* PersonalEditor.swift */,
-				82004547238F6FB7001D7247 /* CreditsEditor.swift */,
-				82C6B651238FB6A200BE220F /* Personal.swift */,
-				829BA6CE2390AEA200FAF342 /* Credits.swift */,
-				8200450F238F62D0001D7247 /* AppDelegate.swift */,
-				82004511238F62D0001D7247 /* SceneDelegate.swift */,
-				82004515238F62D5001D7247 /* Assets.xcassets */,
-				8200451A238F62D5001D7247 /* LaunchScreen.storyboard */,
-				8200451D238F62D5001D7247 /* Info.plist */,
-				82004517238F62D5001D7247 /* Preview Content */,
-			);
-			path = CourseRegistrationManager;
-			sourceTree = "<group>";
-		};
-		82004517238F62D5001D7247 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				82004518238F62D5001D7247 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		82004525238F62D5001D7247 /* CourseRegistrationManagerTests */ = {
-			isa = PBXGroup;
-			children = (
-				82004526238F62D5001D7247 /* CourseRegistrationManagerTests.swift */,
-				82004528238F62D5001D7247 /* Info.plist */,
-			);
-			path = CourseRegistrationManagerTests;
-			sourceTree = "<group>";
-		};
-		82004530238F62D5001D7247 /* CourseRegistrationManagerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				82004531238F62D5001D7247 /* CourseRegistrationManagerUITests.swift */,
-				82004533238F62D5001D7247 /* Info.plist */,
-			);
-			path = CourseRegistrationManagerUITests;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +88,7 @@
 			);
 			name = CourseRegistrationManager;
 			productName = CourseRegistrationManager;
-			productReference = 8200450C238F62D0001D7247 /* CourseRegistrationManager.app */;
+			productReference = 82F3074D2398E9E300CE61B4 /* CourseRegistrationManager.app */;
 			productType = "com.apple.product-type.application";
 		};
 		82004521238F62D5001D7247 /* CourseRegistrationManagerTests */ = {
@@ -183,7 +106,7 @@
 			);
 			name = CourseRegistrationManagerTests;
 			productName = CourseRegistrationManagerTests;
-			productReference = 82004522238F62D5001D7247 /* CourseRegistrationManagerTests.xctest */;
+			productReference = 82F3074E2398E9E300CE61B4 /* CourseRegistrationManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8200452C238F62D5001D7247 /* CourseRegistrationManagerUITests */ = {
@@ -201,7 +124,7 @@
 			);
 			name = CourseRegistrationManagerUITests;
 			productName = CourseRegistrationManagerUITests;
-			productReference = 8200452D238F62D5001D7247 /* CourseRegistrationManagerUITests.xctest */;
+			productReference = 82F3074F2398E9E300CE61B4 /* CourseRegistrationManagerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +159,7 @@
 				Base,
 			);
 			mainGroup = 82004503238F62D0001D7247;
-			productRefGroup = 8200450D238F62D0001D7247 /* Products */;
+			productRefGroup = 82004503238F62D0001D7247;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -252,9 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8200451C238F62D5001D7247 /* LaunchScreen.storyboard in Resources */,
-				82004519238F62D5001D7247 /* Preview Assets.xcassets in Resources */,
-				82004516238F62D5001D7247 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,13 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82004510238F62D0001D7247 /* AppDelegate.swift in Sources */,
-				82004512238F62D0001D7247 /* SceneDelegate.swift in Sources */,
-				82004546238F6DEE001D7247 /* PersonalEditor.swift in Sources */,
-				82C6B652238FB6A200BE220F /* Personal.swift in Sources */,
-				82004548238F6FB7001D7247 /* CreditsEditor.swift in Sources */,
-				829BA6CF2390AEA200FAF342 /* Credits.swift in Sources */,
-				82004544238F6C94001D7247 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82004527238F62D5001D7247 /* CourseRegistrationManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82004532238F62D5001D7247 /* CourseRegistrationManagerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,17 +230,6 @@
 			targetProxy = 8200452E238F62D5001D7247 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8200451A238F62D5001D7247 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8200451B238F62D5001D7247 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		82004534238F62D5001D7247 /* Debug */ = {
@@ -487,7 +387,6 @@
 		8200453A238F62D5001D7247 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CourseRegistrationManagerTests/Info.plist;
@@ -508,7 +407,6 @@
 		8200453B238F62D5001D7247 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CourseRegistrationManagerTests/Info.plist;
@@ -529,7 +427,6 @@
 		8200453D238F62D5001D7247 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CourseRegistrationManagerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -548,7 +445,6 @@
 		8200453E238F62D5001D7247 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CourseRegistrationManagerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

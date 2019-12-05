@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CourseRegistrationManager.xcodeproj">
+      location = "group:../CourseRegistrationManager">
+   </FileRef>
+   <FileRef
+      location = "group:../CourseRegistrationManagerTests">
+   </FileRef>
+   <FileRef
+      location = "group:../CourseRegistrationManagerUITests">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
