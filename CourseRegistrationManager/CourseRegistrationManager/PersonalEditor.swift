@@ -9,13 +9,34 @@
 import SwiftUI
 
 struct PersonalEditor: View {
+    var personal: Personal
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            HStack {
+                Text("学部: ")
+                Text(personal.faculty)
+            }
+            HStack {
+                Text("学科: ")
+                Text(personal.department)
+            }
+            HStack {
+                Text("コース: ")
+                Text(personal.course)
+            }
+            HStack {
+                Text("年次: ")
+                Text(String(personal.grade))
+            }
+        }
+        .navigationBarTitle(Text("PersonalEditor"))
     }
 }
 
 struct PersonalEditor_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalEditor()
+        PersonalEditor(personal: Personal())
+        
     }
 }

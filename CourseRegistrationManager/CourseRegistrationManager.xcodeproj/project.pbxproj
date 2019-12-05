@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		82004510238F62D0001D7247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8200450F238F62D0001D7247 /* AppDelegate.swift */; };
 		82004512238F62D0001D7247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004511238F62D0001D7247 /* SceneDelegate.swift */; };
-		82004514238F62D0001D7247 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004513238F62D0001D7247 /* ContentView.swift */; };
 		82004516238F62D5001D7247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82004515238F62D5001D7247 /* Assets.xcassets */; };
 		82004519238F62D5001D7247 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82004518238F62D5001D7247 /* Preview Assets.xcassets */; };
 		8200451C238F62D5001D7247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8200451A238F62D5001D7247 /* LaunchScreen.storyboard */; };
 		82004527238F62D5001D7247 /* CourseRegistrationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004526238F62D5001D7247 /* CourseRegistrationManagerTests.swift */; };
 		82004532238F62D5001D7247 /* CourseRegistrationManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004531238F62D5001D7247 /* CourseRegistrationManagerUITests.swift */; };
+		82004544238F6C94001D7247 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004543238F6C94001D7247 /* Home.swift */; };
+		82004546238F6DEE001D7247 /* PersonalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004545238F6DEE001D7247 /* PersonalEditor.swift */; };
+		82004548238F6FB7001D7247 /* CreditsEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82004547238F6FB7001D7247 /* CreditsEditor.swift */; };
+		829BA6CF2390AEA200FAF342 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BA6CE2390AEA200FAF342 /* Credits.swift */; };
+		82C6B652238FB6A200BE220F /* Personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6B651238FB6A200BE220F /* Personal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		8200450C238F62D0001D7247 /* CourseRegistrationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseRegistrationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8200450F238F62D0001D7247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82004511238F62D0001D7247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82004513238F62D0001D7247 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82004515238F62D5001D7247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82004518238F62D5001D7247 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8200451B238F62D5001D7247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		8200452D238F62D5001D7247 /* CourseRegistrationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseRegistrationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82004531238F62D5001D7247 /* CourseRegistrationManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRegistrationManagerUITests.swift; sourceTree = "<group>"; };
 		82004533238F62D5001D7247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82004543238F6C94001D7247 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		82004545238F6DEE001D7247 /* PersonalEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalEditor.swift; sourceTree = "<group>"; };
+		82004547238F6FB7001D7247 /* CreditsEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsEditor.swift; sourceTree = "<group>"; };
+		829BA6CE2390AEA200FAF342 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		82C6B651238FB6A200BE220F /* Personal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,13 @@
 		8200450E238F62D0001D7247 /* CourseRegistrationManager */ = {
 			isa = PBXGroup;
 			children = (
+				82004543238F6C94001D7247 /* Home.swift */,
+				82004545238F6DEE001D7247 /* PersonalEditor.swift */,
+				82004547238F6FB7001D7247 /* CreditsEditor.swift */,
+				82C6B651238FB6A200BE220F /* Personal.swift */,
+				829BA6CE2390AEA200FAF342 /* Credits.swift */,
 				8200450F238F62D0001D7247 /* AppDelegate.swift */,
 				82004511238F62D0001D7247 /* SceneDelegate.swift */,
-				82004513238F62D0001D7247 /* ContentView.swift */,
 				82004515238F62D5001D7247 /* Assets.xcassets */,
 				8200451A238F62D5001D7247 /* LaunchScreen.storyboard */,
 				8200451D238F62D5001D7247 /* Info.plist */,
@@ -269,7 +281,11 @@
 			files = (
 				82004510238F62D0001D7247 /* AppDelegate.swift in Sources */,
 				82004512238F62D0001D7247 /* SceneDelegate.swift in Sources */,
-				82004514238F62D0001D7247 /* ContentView.swift in Sources */,
+				82004546238F6DEE001D7247 /* PersonalEditor.swift in Sources */,
+				82C6B652238FB6A200BE220F /* Personal.swift in Sources */,
+				82004548238F6FB7001D7247 /* CreditsEditor.swift in Sources */,
+				829BA6CF2390AEA200FAF342 /* Credits.swift in Sources */,
+				82004544238F6C94001D7247 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
