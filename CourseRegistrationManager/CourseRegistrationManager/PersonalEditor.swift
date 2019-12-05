@@ -12,25 +12,33 @@ struct PersonalEditor: View {
     var personal: Personal
     
     var body: some View {
-        List {
+        VStack {
             HStack {
-                Text("学部: ")
-                Text(personal.faculty)
+                Spacer()
+                
+                NavigationLink(destination: PersonalEditor(personal: Personal())) {
+                    EditButton()
+                }
             }
-            HStack {
-                Text("学科: ")
-                Text(personal.department)
-            }
-            HStack {
-                Text("コース: ")
-                Text(personal.course)
-            }
-            HStack {
-                Text("年次: ")
-                Text(String(personal.grade))
+            List {
+                HStack {
+                    Text("学部: ")
+                    Text(personal.faculty)
+                }
+                HStack {
+                    Text("学科: ")
+                    Text(personal.department)
+                }
+                HStack {
+                    Text("コース: ")
+                    Text(personal.course)
+                }
+                HStack {
+                    Text("年次: ")
+                    Text(String(personal.grade))
+                }
             }
         }
-        .navigationBarTitle(Text("PersonalEditor"))
     }
 }
 
