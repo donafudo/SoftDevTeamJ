@@ -9,16 +9,25 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State var showingProfile = false
+    
+    var profileButton: some View {
+        Button(action: { self.showingProfile.toggle() }) {
+            Image(systemName: "person.crop.circle")
+                .imageScale(.large)
+                .accessibility(label: Text("User Profile"))
+                .padding()
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            List {
-                NavigationLink(destination: PersonalEditor(personal: Personal())) {
-                    Text("Personal")
-                }
-                NavigationLink(destination: CreditsEditor(credits: [Credits]())) {
-                    Text("Credits")
-                }
-                .navigationBarTitle(Text("CourseRegistrationManager"))
+            CreditsEditor(credits: [Credits]())
+            .navigationBarTitle(Text("履修登録！"))
+            .navigationBarItems(trailing: profileButton)
+            .sheet(isPresented: $showingProfile) {
+                PersonalEditor(personal: Personal())
             }
         }
     }

@@ -12,26 +12,34 @@ struct CreditsEditor: View {
     var credits: [Credits] = [Credits]()
     //credits[0].name = "ソフトウェア開発演習I"
     var body: some View {
-        List {
-            Text("CreditsEditor")
-            //Text(credits[0].name)
-            HStack{
-                Text("共通")
-                Text("英語")
-                Text("2")
+        VStack {
+            HStack {
+                Spacer()
+                
+                NavigationLink(destination: PersonalEditor(personal: Personal())) {
+                    EditButton()
+                }
             }
-            HStack{
-                Text("専門基礎")
-                Text("微積")
-                Text("2")
-            }
-            HStack{
-                Text("専門")
-                Text("プログラミング")
-                Text("2")
+            List {
+                //Text(credits[0].name)
+                
+                HStack{
+                    Text("共通")
+                    Text("英語")
+                    Text("2")
+                }
+                HStack{
+                    Text("専門基礎")
+                    Text("微積")
+                    Text("2")
+                }
+                HStack{
+                    Text("専門")
+                    Text("プログラミング")
+                    Text("2")
+                }
             }
         }
-        .navigationBarTitle(Text("CreditsEditor"))
     }
 }
 
