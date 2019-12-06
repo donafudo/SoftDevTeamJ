@@ -9,6 +9,14 @@
 import SwiftUI
 
 struct Home: View {
+    var categories: [String: [Credit]] {
+        Dictionary(
+            grouping: creditData,
+            by: { $0.category }
+        )
+    }
+    
+    @EnvironmentObject var userData: UserData
     @State var showingProfile = false
     
     var profileButton: some View {
@@ -23,8 +31,7 @@ struct Home: View {
     var body: some View {
         NavigationView {
             List {
-                CreditsEditor(credits: [Credits]())
-                NavigationLink(destination: CreditsEditor(credits: [Credits]())) {
+                NavigationLink(destination: CreditList()) {
                     Text("See All")
                 }
             }
@@ -32,6 +39,7 @@ struct Home: View {
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
                 ProfileHost()
+                    .environmentObject(self.userData)
             }
         }
     }
@@ -40,5 +48,6 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .environmentObject(UserData())
     }
 }

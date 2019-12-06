@@ -1,0 +1,39 @@
+[
+    {
+        "id" : 1,
+        "name": "大学英語",
+        "category": "共通教育",
+        "field": "基幹",
+        "subject": "外国語科目",
+        "credit": 4,
+        "isCompleted": true,
+    },
+    {
+        "id" : 2,
+        "name": "微積STI",
+        "category": "専門基礎",
+        "field": "専門基礎",
+        "subject": "専門基礎科目",
+        "credit": 2,
+        "isCompleted": true,
+    },
+    {
+        "id" : 3,
+        "name": "プログラミングI",
+        "category": "専門",
+        "field": "専門科目",
+        "subject": "知能情報コア",
+        "credit": 2,
+        "isCompleted": true,
+    },
+    {
+        "id" : 4,
+        "name": "ソフトウェア開発演習",
+        "category": "専門",
+        "field": "専門科目",
+        "subject": "知能情報アドバンスト",
+        "credit": 2,
+        "isCompleted": false,
+    }
+]
+

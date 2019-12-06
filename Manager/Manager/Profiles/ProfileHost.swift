@@ -10,15 +10,17 @@ import SwiftUI
 
 struct ProfileHost: View {
     @Environment(\.editMode) var mode
-        
+    @EnvironmentObject var userData: UserData
+    @State var draftProfile = Profile.default
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
                 if self.mode?.wrappedValue == .active {
                     Button("Cancel") {
+                        self.draftProfile = self.userData.profile
                         self.mode?.animation().wrappedValue = .inactive
                     }
-                    .padding()
                 }
                 
                 Spacer()
@@ -26,9 +28,15 @@ struct ProfileHost: View {
                 EditButton()
             }
             if self.mode?.wrappedValue == .inactive {
-                Text("inactive")
+                ProfileSummary(profile: userData.profile)
             } else {
-                Text("else")
+                ProfileEditor(profile: $draftProfile)
+                    .onAppear {
+                        self.draftProfile = self.userData.profile
+                    }
+                    .onDisappear {
+                        self.userData.profile = self.draftProfile
+                    }
             }
         }
         .padding()
