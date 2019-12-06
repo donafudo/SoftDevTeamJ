@@ -37,6 +37,14 @@ struct CreditDetail: View {
                         }
                     }
                 }
+                
+                HStack(alignment: .top) {
+                    Text(verbatim: credit.category)
+                        .font(.subheadline)
+                    Spacer()
+                    Text(verbatim: credit.field)
+                        .font(.subheadline)
+                }
             }
             .padding()
             
