@@ -11,7 +11,7 @@ import CoreLocation
 import UIKit
 import SwiftUI
 
-let creditData: [Credit] = load("creditData.json")
+var creditData: [Credit] = load("creditData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -32,5 +32,29 @@ func load<T: Decodable>(_ filename: String) -> T {
         return try decoder.decode(T.self, from: data)
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
+}
+
+func store(filename: String, credit: Credit) {
+    creditData.append(credit)
+    
+    let encoder = JSONEncoder()
+    
+    var jsonstr = ""
+    do {
+        let content = try encoder.encode(credit)
+        jsonstr = String(data: content, encoding: .utf8)!
+    }catch{
+        
+    }
+    
+    let libraryPath = NSHomeDirectory() + "/Library/"
+    // 保存する場所
+    let filePath = libraryPath + filename
+    
+    do{
+        try jsonstr.write(toFile:filePath, atomically: true, encoding: .utf8)
+    }catch{
+        
     }
 }
