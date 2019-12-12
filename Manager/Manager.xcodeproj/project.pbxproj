@@ -46,6 +46,7 @@
 		82F3077C2398EE7200CE61B4 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 		82F307812398F59700CE61B4 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		82F307832398F6FE00CE61B4 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		82F62610239FC0640086E207 /* Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icon; path = /Users/keitaro/SoftDevTeamJ/Manager/Manager/Icon; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 				82F307622398EBF300CE61B4 /* SceneDelegate.swift */,
 				82F3077A2398EDAF00CE61B4 /* Home.swift */,
 				82BACE152399E79000C6F525 /* Resources */,
+				82F62610239FC0640086E207 /* Icon */,
 				82F307662398EBF800CE61B4 /* Assets.xcassets */,
 				82F3076B2398EBF800CE61B4 /* LaunchScreen.storyboard */,
 				82F3076E2398EBF800CE61B4 /* Info.plist */,
