@@ -44,6 +44,9 @@ struct CreditDetail: View {
                     Spacer()
                     Text(verbatim: credit.field)
                         .font(.subheadline)
+                    Spacer()
+                    Text(verbatim: credit.subject)
+                        .font(.subheadline)
                 }
             }
             .padding()
