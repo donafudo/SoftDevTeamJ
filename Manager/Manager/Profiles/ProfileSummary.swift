@@ -13,9 +13,13 @@ struct ProfileSummary: View {
     
     var body: some View {
         List {
-            Text(profile.username)
-                .bold()
-                .font(.title)
+            HStack {
+                Text(profile.username)
+                    .bold()
+                    .font(.title)
+                Spacer()
+                Image("icon120")
+            }
             HStack {
                 Text("学部").bold()
                 Divider()
