@@ -38,6 +38,7 @@
 		82F3077D2398EE7200CE61B4 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F3077C2398EE7200CE61B4 /* Credit.swift */; };
 		82F307822398F59700CE61B4 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F307812398F59700CE61B4 /* ProfileSummary.swift */; };
 		82F307842398F6FE00CE61B4 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F307832398F6FE00CE61B4 /* ProfileEditor.swift */; };
+		82F7313F23A34FDC00C981AC /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F7313E23A34FDC00C981AC /* ProfileImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		82F307812398F59700CE61B4 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		82F307832398F6FE00CE61B4 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		82F62610239FC0640086E207 /* Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icon; path = /Users/keitaro/SoftDevTeamJ/Manager/Manager/Icon; sourceTree = "<absolute>"; };
+		82F7313E23A34FDC00C981AC /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				82F307782398ED0800CE61B4 /* ProfileHost.swift */,
 				82F307812398F59700CE61B4 /* ProfileSummary.swift */,
 				82F307832398F6FE00CE61B4 /* ProfileEditor.swift */,
+				82F7313E23A34FDC00C981AC /* ProfileImage.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				82F307792398ED0800CE61B4 /* ProfileHost.swift in Sources */,
 				82F3077B2398EDAF00CE61B4 /* Home.swift in Sources */,
 				82BACE192399EC7C00C6F525 /* Data.swift in Sources */,
+				82F7313F23A34FDC00C981AC /* ProfileImage.swift in Sources */,
 				82F307822398F59700CE61B4 /* ProfileSummary.swift in Sources */,
 				82F3077D2398EE7200CE61B4 /* Credit.swift in Sources */,
 				82459D26239919EF00D15E43 /* UserData.swift in Sources */,
