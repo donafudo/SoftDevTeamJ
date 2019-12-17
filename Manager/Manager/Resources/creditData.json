@@ -7,6 +7,7 @@
         "subject": "外国語科目",
         "credit": 4,
         "isCompleted": true,
+        "imageName": "language"
     },
     {
         "id" : 2,
@@ -16,6 +17,7 @@
         "subject": "専門基礎科目",
         "credit": 2,
         "isCompleted": true,
+        "imageName": "math"
     },
     {
         "id" : 3,
@@ -25,6 +27,7 @@
         "subject": "知能情報コア",
         "credit": 2,
         "isCompleted": true,
+        "imageName": "programming"
     },
     {
         "id" : 4,
@@ -34,6 +37,7 @@
         "subject": "知能情報アドバンスト",
         "credit": 2,
         "isCompleted": false,
+        "imageName": "programming"
     }
 ]
 

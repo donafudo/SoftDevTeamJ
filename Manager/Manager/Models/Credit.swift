@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct Credit: Hashable, Codable, Identifiable {
     var id: Int
@@ -16,4 +17,11 @@ struct Credit: Hashable, Codable, Identifiable {
     var subject: String
     var credit: Int
     var isCompleted: Bool
+    fileprivate var imageName: String
+}
+
+extension Credit {
+    var image: Image {
+        ImageStore.shared.image(name: imageName)
+    }
 }

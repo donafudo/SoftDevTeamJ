@@ -18,10 +18,14 @@ struct CreditDetail: View {
     
     var body: some View {
          VStack {
+            Spacer()
+            CircleImage(image: credit.image)
+                .offset(x: 0, y: -130)
+                .padding(.bottom, -130)
             VStack(alignment: .leading) {
                 HStack {
                     Text(verbatim: credit.name)
-                        .font(.title)
+                        .font(.largeTitle)
                     
                     Button(action: {
                         self.userData.credits[self.creditIndex]
@@ -36,17 +40,22 @@ struct CreditDetail: View {
                                 .foregroundColor(Color.gray)
                         }
                     }
+                    Spacer()
+                    Text(verbatim: String(credit.credit))
+                        .font(.title)
                 }
-                
                 HStack(alignment: .top) {
                     Text(verbatim: credit.category)
-                        .font(.subheadline)
+                        .font(.headline)
+                        .fontWeight(.regular)
                     Spacer()
                     Text(verbatim: credit.field)
-                        .font(.subheadline)
+                        .font(.headline)
+                        .fontWeight(.regular)
                     Spacer()
                     Text(verbatim: credit.subject)
-                        .font(.subheadline)
+                        .font(.headline)
+                        .fontWeight(.regular)
                 }
             }
             .padding()
