@@ -20,13 +20,13 @@ struct ProfileSummary: View {
                         .bold()
                         .font(.title)
                     Spacer()
-                    NavigationLink(destination: ProfileImage(imageName: self.imageName)) {
+                    //NavigationLink(destination: ProfileImage(imageName: self.imageName)) {
                         Image(imageName)
                             .resizable()
                             .scaledToFit()
                             .frame(width: 120, height: 120)
                             .clipShape(Circle())
-                    }
+                    //}
                 }
                 HStack {
                     Text("学部").bold()

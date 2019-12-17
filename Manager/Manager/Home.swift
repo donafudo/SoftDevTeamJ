@@ -16,8 +16,8 @@ struct Home: View {
         )
     }
     
-    @EnvironmentObject var userData: UserData
     @State var showingProfile = false
+    @EnvironmentObject var userData: UserData
     
     var profileButton: some View {
         Button(action: { self.showingProfile.toggle() }) {
@@ -31,6 +31,11 @@ struct Home: View {
     var body: some View {
         NavigationView {
             List {
+                ForEach(categories.keys.sorted(), id: \.self) { key in
+                    CategoryRow(categoryName: key, items: self.categories[key]!)
+                }
+                .listRowInsets(EdgeInsets())
+                
                 NavigationLink(destination: CreditList()) {
                     Text("See All")
                 }
