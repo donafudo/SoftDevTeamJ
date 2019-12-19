@@ -40,6 +40,8 @@ struct CreditDetail: View {
                                 .foregroundColor(Color.gray)
                         }
                     }
+                    Image(systemName: "trash")
+                    Image(systemName: "square.and.arrow.up")
                     Spacer()
                     Text(verbatim: String(credit.credit))
                         .font(.title)

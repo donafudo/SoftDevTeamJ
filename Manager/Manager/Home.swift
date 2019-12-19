@@ -28,9 +28,19 @@ struct Home: View {
         }
     }
     
+    var completed: [Credit] {
+        creditData.filter { $0.isCompleted }
+    }
+    
     var body: some View {
         NavigationView {
             List {
+                CompletedCredits(credits: completed)
+                    .scaledToFill()
+                    .frame(height: 200)
+                    .clipped()
+                    .listRowInsets(EdgeInsets())
+                
                 ForEach(categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
@@ -47,6 +57,13 @@ struct Home: View {
                     .environmentObject(self.userData)
             }
         }
+    }
+}
+
+struct CompletedCredits: View {
+    var credits: [Credit]
+    var body: some View {
+        credits[0].image.resizable()
     }
 }
 
