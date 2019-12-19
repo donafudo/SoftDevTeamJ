@@ -33,6 +33,7 @@
 		4278682A4581FA202F7845A3 /* Pods-Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manager.release.xcconfig"; path = "Target Support Files/Pods-Manager/Pods-Manager.release.xcconfig"; sourceTree = "<group>"; };
 		7A2975AF23A0FF150012DFC9 /* LectureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureInfo.swift; sourceTree = "<group>"; };
 		7A2975B123A1034E0012DFC9 /* LectureDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureDatabase.swift; sourceTree = "<group>"; };
+		7A29762A23AB3CE80012DFC9 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		7C9F658FB6B731161666AEE3 /* Pods_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AAE736C78F6AFDDDD34F95 /* Pods-Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manager.debug.xcconfig"; path = "Target Support Files/Pods-Manager/Pods-Manager.debug.xcconfig"; sourceTree = "<group>"; };
 		82459D25239919EF00D15E43 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		82BACE152399E79000C6F525 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7A29762A23AB3CE80012DFC9 /* default.realm */,
 				82BACE162399E88B00C6F525 /* creditData.json */,
 			);
 			path = Resources;

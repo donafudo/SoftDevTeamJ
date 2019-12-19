@@ -11,9 +11,9 @@ import RealmSwift
 
 class LectureDatabase {
     //singleton,使っていいかは微妙
-    static let Instance = LectureDatabase()
+    static let shared = LectureDatabase()
     
-    let dbfileName = "LectureDB"
+    let dbfileName = "default"
     
     private init() {
         copyRealmDatabase()
