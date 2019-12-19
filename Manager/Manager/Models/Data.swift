@@ -5,13 +5,12 @@
 //  Created by Nakai Keitaro on 2019/12/06.
 //  Copyright © 2019 Nakai Keitaro. All rights reserved.
 //
-
 import Foundation
 import CoreLocation
 import UIKit
 import SwiftUI
 
-var creditData: [Credit] = load("creditData.json")
+let creditData: [Credit] = load("creditData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -35,26 +34,35 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-func store(filename: String, credit: Credit) {
-    creditData.append(credit)
+final class ImageStore {
+    typealias _ImageDictionary = [String: CGImage]
+    fileprivate var images: _ImageDictionary = [:]
+
+    fileprivate static var scale = 2
     
-    let encoder = JSONEncoder()
+    static var shared = ImageStore()
     
-    var jsonstr = ""
-    do {
-        let content = try encoder.encode(credit)
-        jsonstr = String(data: content, encoding: .utf8)!
-    }catch{
+    func image(name: String) -> Image {
+        let index = _guaranteeImage(name: name)
         
+        return Image(images.values[index], scale: CGFloat(ImageStore.scale), label: Text(verbatim: name))
+    }
+
+    static func loadImage(name: String) -> CGImage {
+        guard
+            let url = Bundle.main.url(forResource: name, withExtension: "png"),
+            let imageSource = CGImageSourceCreateWithURL(url as NSURL, nil),
+            let image = CGImageSourceCreateImageAtIndex(imageSource, 0, nil)
+        else {
+            fatalError("Couldn't load image \(name).png from main bundle.")
+        }
+        return image
     }
     
-    let libraryPath = NSHomeDirectory() + "/Library/"
-    // 保存する場所
-    let filePath = libraryPath + filename
-    
-    do{
-        try jsonstr.write(toFile:filePath, atomically: true, encoding: .utf8)
-    }catch{
+    fileprivate func _guaranteeImage(name: String) -> _ImageDictionary.Index {
+        if let index = images.index(forKey: name) { return index }
         
+        images[name] = ImageStore.loadImage(name: name)
+        return images.index(forKey: name)!
     }
 }
