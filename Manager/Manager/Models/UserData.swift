@@ -9,8 +9,13 @@
 import Combine
 import SwiftUI
 
+//let userDefaults = UserDefaults.standard
+
 final class UserData: ObservableObject {
-    @Published var showCompletedOnly = false
+    /*init() {
+        userDefaults.register(defaults: ["showCompletedOnly": false])
+    }*/
+    @Published var showCompletedOnly = false/*userDefaults.bool(forKey: "showCompletedOnly")*/
     @Published var credits = creditData
     @Published var profile = Profile.default
 }

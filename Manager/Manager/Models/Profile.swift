@@ -15,5 +15,13 @@ struct Profile {
     var course: String
     var grade: Int
     
-    static let `default` = Self(username: "Nakai", faculty: "工学部", department: "工学科", course: "知能情報", grade: 1)
+    static let `default` = Self(username: "玉那覇圭泰", faculty: "工学部", department: "工学科", course: "知能情報", grade: 1)
+    
+    init(username: String, faculty: String, department: String, course: String, grade: Int) {
+        self.username = username
+        self.faculty = faculty
+        self.department = department
+        self.course = course
+        self.grade = grade
+    }
 }
