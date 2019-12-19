@@ -5,7 +5,6 @@
 //  Created by Nakai Keitaro on 2019/12/06.
 //  Copyright © 2019 Nakai Keitaro. All rights reserved.
 //
-
 import Foundation
 import CoreLocation
 import UIKit
