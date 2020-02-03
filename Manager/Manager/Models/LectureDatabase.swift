@@ -21,8 +21,9 @@ class LectureDatabase {
     
     private func copyRealmDatabase(){
         let defaultRealmPath = Realm.Configuration.defaultConfiguration.fileURL!
+
         //すでにrealmデータベスが存在する場合は処理を終了
-        if FileManager.default.fileExists(atPath: defaultRealmPath.path) {
+        if FileManager.default.fileExists(atPath: defaultRealmPath.path){
             return
         }
         //データベースをコピー
@@ -53,6 +54,30 @@ class LectureDatabase {
             }
         } catch {
             
+        }
+    }
+}
+
+
+import SwiftUI
+struct LectureList: View {
+    @State var userData=LectureDatabase.shared.LoadLecterList()
+
+    @State var a:String="aa"
+    var body: some View {
+        VStack{
+            ForEach(userData.filter("name like '*情報*'"),id: \.self){data in
+                Text(data.name!)
+            }
+
+        }
+    }
+}
+
+struct LectureList_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            LectureList()
         }
     }
 }

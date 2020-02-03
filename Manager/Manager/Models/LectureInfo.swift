@@ -19,6 +19,7 @@ enum LectureImageType:String{
 enum Semester:String {
     case Previous="previous"
     case Later="later"
+    case None="none"
 }
 
 enum LectureCategory:String{
@@ -33,6 +34,7 @@ enum LectureField:String{
     case Kikan="基幹"
     case Senmon="専門科目"
     case SenmonKiso="専門基礎科目"
+    case Sensyuu="先修"
 }
 
 enum LectureSubject:String{
@@ -53,6 +55,7 @@ enum LectureSubject:String{
     case SugakuKisoSentaku="数学基礎選択"
     case KogakuYugo="工学融合"
     case TinoJouhoKanren="知能情報関連"
+    case Sensyuu="先修"
 }
 
 class Lectureinfo: Object {
@@ -67,6 +70,7 @@ class Lectureinfo: Object {
     let grade = List<LecturedGrade>()
     @objc dynamic private var semester: String = ""
     @objc dynamic var isCompleted: Bool = false
+    @objc dynamic var attendanceGrade: Int = 0
     @objc dynamic private var imageName: String=""
     
     var categoryType: LectureCategory? {
