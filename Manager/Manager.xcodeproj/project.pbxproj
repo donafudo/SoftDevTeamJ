@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		7A140A1A23F15A8B008CA186 /* internship.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A140A1923F15A8A008CA186 /* internship.png */; };
 		7A140A1C23F15A91008CA186 /* study.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A140A1B23F15A91008CA186 /* study.png */; };
-		7A140A1E23F2789D008CA186 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 7A140A1D23F2789D008CA186 /* default.realm */; };
 		7A2975B023A0FF150012DFC9 /* LectureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2975AF23A0FF150012DFC9 /* LectureInfo.swift */; };
 		7A2975B223A1034E0012DFC9 /* LectureDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2975B123A1034E0012DFC9 /* LectureDatabase.swift */; };
+		7AD001CF23F2D1F40084CA61 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 7AD001CE23F2D1F40084CA61 /* default.realm */; };
 		821DAB7B23A87A87006C1576 /* programming.png in Resources */ = {isa = PBXBuildFile; fileRef = 821DAB7923A87A87006C1576 /* programming.png */; };
 		821DAB7C23A87A87006C1576 /* language.png in Resources */ = {isa = PBXBuildFile; fileRef = 821DAB7A23A87A87006C1576 /* language.png */; };
 		821DAB7F23A87BC9006C1576 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DAB7E23A87BC9006C1576 /* CircleImage.swift */; };
@@ -71,9 +71,9 @@
 		4278682A4581FA202F7845A3 /* Pods-Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manager.release.xcconfig"; path = "Target Support Files/Pods-Manager/Pods-Manager.release.xcconfig"; sourceTree = "<group>"; };
 		7A140A1923F15A8A008CA186 /* internship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = internship.png; sourceTree = "<group>"; };
 		7A140A1B23F15A91008CA186 /* study.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = study.png; sourceTree = "<group>"; };
-		7A140A1D23F2789D008CA186 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		7A2975AF23A0FF150012DFC9 /* LectureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureInfo.swift; sourceTree = "<group>"; };
 		7A2975B123A1034E0012DFC9 /* LectureDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureDatabase.swift; sourceTree = "<group>"; };
+		7AD001CE23F2D1F40084CA61 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		7C9F658FB6B731161666AEE3 /* Pods_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AAE736C78F6AFDDDD34F95 /* Pods-Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manager.debug.xcconfig"; path = "Target Support Files/Pods-Manager/Pods-Manager.debug.xcconfig"; sourceTree = "<group>"; };
 		821DAB7923A87A87006C1576 /* programming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = programming.png; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		82BACE152399E79000C6F525 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7A140A1D23F2789D008CA186 /* default.realm */,
+				7AD001CE23F2D1F40084CA61 /* default.realm */,
 				7A140A1B23F15A91008CA186 /* study.png */,
 				824B0C0723F2B66100121679 /* music.png */,
 				824B0C0023F2B66100121679 /* ningen.png */,
@@ -377,7 +377,6 @@
 				821DAB7B23A87A87006C1576 /* programming.png in Resources */,
 				82F3076D2398EBF800CE61B4 /* LaunchScreen.storyboard in Resources */,
 				824B0C1923F2B67200121679 /* career.png in Resources */,
-				7A140A1E23F2789D008CA186 /* default.realm in Resources */,
 				82E3115723A1E4780055E00D /* icon58.png in Resources */,
 				824B0C0823F2B66100121679 /* keizai.png in Resources */,
 				824B0C1423F2B66100121679 /* kenkyu.png in Resources */,
@@ -390,6 +389,7 @@
 				824B0C1223F2B66100121679 /* language.png in Resources */,
 				7A140A1A23F15A8B008CA186 /* internship.png in Resources */,
 				82E3115823A1E4780055E00D /* icon76.png in Resources */,
+				7AD001CF23F2D1F40084CA61 /* default.realm in Resources */,
 				82E3115D23A1E4780055E00D /* icon180.png in Resources */,
 				824B0C1123F2B66100121679 /* jikken.png in Resources */,
 				824B0C1723F2B66100121679 /* music.png in Resources */,

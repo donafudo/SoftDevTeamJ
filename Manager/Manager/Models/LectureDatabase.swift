@@ -33,7 +33,9 @@ class LectureDatabase {
         let bundleRealmPath = Bundle.main.url(forResource: dbfileName, withExtension: "realm")
         
         do{
-            try FileManager.default.removeItem(atPath: defaultRealmPath.path)
+            if FileManager.default.fileExists(atPath: defaultRealmPath.path){
+                try FileManager.default.removeItem(atPath: defaultRealmPath.path)
+            }
         }catch let error {
             fatalError("error removing realm file: \(error)")
         }
