@@ -44,11 +44,13 @@ struct Home: View {
                 ForEach(categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
+                Divider()
                 .listRowInsets(EdgeInsets())
                 
                 NavigationLink(destination: CreditList().environmentObject(Store())) {
                     Text("See All")
                 }
+                Divider()
             }
             .navigationBarTitle(Text("Home"))
             .navigationBarItems(trailing: profileButton)

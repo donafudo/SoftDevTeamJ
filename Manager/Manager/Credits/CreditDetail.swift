@@ -51,8 +51,6 @@ struct CreditDetail: View {
                                 .foregroundColor(Color.gray)
                         }
                     }
-                    Image(systemName: "trash")
-                    Image(systemName: "square.and.arrow.up")
                     Spacer()
                     Text(verbatim: String(credit.credit))
                         .font(.title)
@@ -69,6 +67,28 @@ struct CreditDetail: View {
                     Text(verbatim: credit.subjectType!.rawValue)
                         .font(.headline)
                         .fontWeight(.regular)
+                }
+                Divider()
+                HStack(alignment: .top) {
+                    Text(verbatim: "受講可能時期")
+                        .font(.headline)
+                        .fontWeight(.regular)
+                    
+                    Text("年次")
+                    ForEach(credit.grade, id: \.self){ grade in
+                        Text(verbatim: String(grade.grade)+" ")
+                    }
+
+                    Spacer()
+                    if credit.semesterType! == Semester.Later {
+                        Text(verbatim: "後期")
+                            .font(.headline)
+                            .fontWeight(.regular)
+                    } else {
+                        Text(verbatim: "前期")
+                            .font(.headline)
+                            .fontWeight(.regular)
+                    }
                 }
             }
             .padding()

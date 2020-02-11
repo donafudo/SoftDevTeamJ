@@ -26,7 +26,7 @@ class LectureDatabase {
 
         //すでにrealmデータベスが存在する場合は処理を終了
         if FileManager.default.fileExists(atPath: defaultRealmPath.path){
-            return
+            //return
         }
         
         //データベースをコピー

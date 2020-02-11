@@ -15,7 +15,7 @@ final class UserData: ObservableObject {
     /*init() {
         userDefaults.register(defaults: ["showCompletedOnly": false])
     }*/
-    @Published var showCompletedOnly = false/*userDefaults.bool(forKey: "showCompletedOnly")*/
+    @Published var showCompletedOnly = true/*userDefaults.bool(forKey: "showCompletedOnly")*/
     @Published var credits:Results<Lectureinfo> = creditData
     @Published var profile = Profile.default
 }

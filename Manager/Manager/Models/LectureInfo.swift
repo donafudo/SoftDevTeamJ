@@ -27,7 +27,7 @@ enum LectureImageType:String{
     case Science="science"
     case Seiji="seiji"
     case Shizen="shizen"
-    case Sports="sports"
+    case Sport="sport"
 }
 enum Semester:String {
     case Previous="previous"

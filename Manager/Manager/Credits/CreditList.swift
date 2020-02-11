@@ -14,6 +14,7 @@ struct CreditList: View {
     
     var body: some View {
         List {
+            Count()
             Toggle(isOn: $userData.showCompletedOnly) {
                 Text("Show Completed Only")
             }
@@ -36,7 +37,6 @@ struct CreditList: View {
 }
 
 struct ForEachBuilder<Content>: View where Content: View {
-
     private let content: Content
 
     init(@ViewBuilder content: () -> Content) {
@@ -55,5 +55,6 @@ struct CreditsList_Previews: PreviewProvider {
             CreditList()
         }
         .environmentObject(Store())
+        .environmentObject(UserData())
     }
 }
