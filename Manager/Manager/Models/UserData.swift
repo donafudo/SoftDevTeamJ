@@ -8,7 +8,7 @@
 
 import Combine
 import SwiftUI
-
+import RealmSwift
 //let userDefaults = UserDefaults.standard
 
 final class UserData: ObservableObject {
@@ -16,6 +16,6 @@ final class UserData: ObservableObject {
         userDefaults.register(defaults: ["showCompletedOnly": false])
     }*/
     @Published var showCompletedOnly = false/*userDefaults.bool(forKey: "showCompletedOnly")*/
-    @Published var credits = creditData
+    @Published var credits:Results<Lectureinfo> = creditData
     @Published var profile = Profile.default
 }

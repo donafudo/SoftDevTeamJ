@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct CreditRow: View {
-    var credit: Credit
+    var credit: Lectureinfo
     
     var body: some View {
         HStack {
-            Text(verbatim: credit.name)
+            Text(verbatim: credit.name!)
             Spacer()
             
             if credit.isCompleted {

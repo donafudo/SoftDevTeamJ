@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct Home: View {
-    var categories: [String: [Credit]] {
+    var categories: [String: [Lectureinfo]] {
         Dictionary(
-            grouping: creditData,
-            by: { $0.category }
+            grouping: creditData.sorted(byKeyPath: "id", ascending: true),
+            by: { $0.categoryType!.rawValue}
         )
     }
     
@@ -28,14 +28,14 @@ struct Home: View {
         }
     }
     
-    var completed: [Credit] {
-        creditData.filter { $0.isCompleted }
+    var randomLecture: Lectureinfo {
+        creditData[Int.random(in: 0 ..< creditData.count)-1]
     }
     
     var body: some View {
         NavigationView {
             List {
-                CompletedCredits(credits: completed)
+                CompletedCredits(credits: randomLecture)
                     .scaledToFill()
                     .frame(height: 200)
                     .clipped()
@@ -46,7 +46,7 @@ struct Home: View {
                 }
                 .listRowInsets(EdgeInsets())
                 
-                NavigationLink(destination: CreditList()) {
+                NavigationLink(destination: CreditList().environmentObject(Store())) {
                     Text("See All")
                 }
             }
@@ -60,16 +60,18 @@ struct Home: View {
     }
 }
 
+
 struct CompletedCredits: View {
-    var credits: [Credit]
+    var credits: Lectureinfo
     var body: some View {
-        credits[0].image.resizable()
+        ImageStore.shared.image(name: credits.imageType?.rawValue ?? "study")
     }
 }
-
+ 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
             .environmentObject(UserData())
     }
 }
+ 
