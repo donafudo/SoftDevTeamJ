@@ -16,20 +16,22 @@
 		821DAB7C23A87A87006C1576 /* language.png in Resources */ = {isa = PBXBuildFile; fileRef = 821DAB7A23A87A87006C1576 /* language.png */; };
 		821DAB7F23A87BC9006C1576 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821DAB7E23A87BC9006C1576 /* CircleImage.swift */; };
 		82459D26239919EF00D15E43 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82459D25239919EF00D15E43 /* UserData.swift */; };
-		8271763E23F29EA7003E82D5 /* tetsugaku.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271763623F29EA7003E82D5 /* tetsugaku.png */; };
-		8271763F23F29EA7003E82D5 /* kenkyu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271763723F29EA7003E82D5 /* kenkyu.png */; };
-		8271764023F29EA7003E82D5 /* shizen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271763823F29EA7003E82D5 /* shizen.png */; };
-		8271764123F29EA7003E82D5 /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271763923F29EA7003E82D5 /* sports.png */; };
-		8271764223F29EA7003E82D5 /* art.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271763A23F29EA7003E82D5 /* art.png */; };
-		8271764423F29EA7003E82D5 /* ar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271763C23F29EA7003E82D5 /* ar.png */; };
-		8271765723F2A24A003E82D5 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271764923F2A24A003E82D5 /* music.png */; };
-		8271765823F2A24A003E82D5 /* law.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271764A23F2A24A003E82D5 /* law.png */; };
-		8271765A23F2A24A003E82D5 /* ningen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271764C23F2A24A003E82D5 /* ningen.png */; };
-		8271765B23F2A24A003E82D5 /* seiji.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271764D23F2A24A003E82D5 /* seiji.png */; };
-		8271765C23F2A24A003E82D5 /* jikken.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271764E23F2A24A003E82D5 /* jikken.png */; };
-		8271766023F2A24A003E82D5 /* keizai.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271765223F2A24A003E82D5 /* keizai.png */; };
-		8271766123F2A24A003E82D5 /* science.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271765323F2A24A003E82D5 /* science.png */; };
-		8271766323F2A2F6003E82D5 /* career.png in Resources */ = {isa = PBXBuildFile; fileRef = 8271766223F2A2F6003E82D5 /* career.png */; };
+		824B0C0823F2B66100121679 /* keizai.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0BF823F2B66000121679 /* keizai.png */; };
+		824B0C0923F2B66100121679 /* science.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0BF923F2B66000121679 /* science.png */; };
+		824B0C0A23F2B66100121679 /* law.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0BFA23F2B66000121679 /* law.png */; };
+		824B0C0B23F2B66100121679 /* math.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0BFB23F2B66000121679 /* math.png */; };
+		824B0C0C23F2B66100121679 /* shizen.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0BFC23F2B66000121679 /* shizen.png */; };
+		824B0C0E23F2B66100121679 /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0BFE23F2B66100121679 /* sports.png */; };
+		824B0C0F23F2B66100121679 /* programming.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0BFF23F2B66100121679 /* programming.png */; };
+		824B0C1023F2B66100121679 /* ningen.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0023F2B66100121679 /* ningen.png */; };
+		824B0C1123F2B66100121679 /* jikken.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0123F2B66100121679 /* jikken.png */; };
+		824B0C1223F2B66100121679 /* language.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0223F2B66100121679 /* language.png */; };
+		824B0C1323F2B66100121679 /* study.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0323F2B66100121679 /* study.png */; };
+		824B0C1423F2B66100121679 /* kenkyu.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0423F2B66100121679 /* kenkyu.png */; };
+		824B0C1523F2B66100121679 /* seiji.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0523F2B66100121679 /* seiji.png */; };
+		824B0C1623F2B66100121679 /* tetsugaku.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0623F2B66100121679 /* tetsugaku.png */; };
+		824B0C1723F2B66100121679 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C0723F2B66100121679 /* music.png */; };
+		824B0C1923F2B67200121679 /* career.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B0C1823F2B67200121679 /* career.png */; };
 		829FE96E23A872620085C0C9 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829FE96D23A872620085C0C9 /* CategoryRow.swift */; };
 		829FE97023A8770B0085C0C9 /* math.png in Resources */ = {isa = PBXBuildFile; fileRef = 829FE96F23A8770B0085C0C9 /* math.png */; };
 		82BACE142399E5D900C6F525 /* CreditList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BACE132399E5D900C6F525 /* CreditList.swift */; };
@@ -78,20 +80,22 @@
 		821DAB7A23A87A87006C1576 /* language.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = language.png; sourceTree = "<group>"; };
 		821DAB7E23A87BC9006C1576 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		82459D25239919EF00D15E43 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		8271763623F29EA7003E82D5 /* tetsugaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tetsugaku.png; path = ../../../../Downloads/tetsugaku.png; sourceTree = "<group>"; };
-		8271763723F29EA7003E82D5 /* kenkyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kenkyu.png; path = ../../../../Downloads/kenkyu.png; sourceTree = "<group>"; };
-		8271763823F29EA7003E82D5 /* shizen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shizen.png; path = ../../../../Downloads/shizen.png; sourceTree = "<group>"; };
-		8271763923F29EA7003E82D5 /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sports.png; path = ../../../../Downloads/sports.png; sourceTree = "<group>"; };
-		8271763A23F29EA7003E82D5 /* art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = art.png; path = ../../../../Downloads/art.png; sourceTree = "<group>"; };
-		8271763C23F29EA7003E82D5 /* ar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ar.png; path = ../../../../Downloads/ar.png; sourceTree = "<group>"; };
-		8271764923F2A24A003E82D5 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = music.png; path = ../../../../Downloads/music.png; sourceTree = "<group>"; };
-		8271764A23F2A24A003E82D5 /* law.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = law.png; path = ../../../../Downloads/law.png; sourceTree = "<group>"; };
-		8271764C23F2A24A003E82D5 /* ningen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ningen.png; path = ../../../../Downloads/ningen.png; sourceTree = "<group>"; };
-		8271764D23F2A24A003E82D5 /* seiji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seiji.png; path = ../../../../Downloads/seiji.png; sourceTree = "<group>"; };
-		8271764E23F2A24A003E82D5 /* jikken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jikken.png; path = ../../../../Downloads/jikken.png; sourceTree = "<group>"; };
-		8271765223F2A24A003E82D5 /* keizai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keizai.png; path = ../../../../Downloads/keizai.png; sourceTree = "<group>"; };
-		8271765323F2A24A003E82D5 /* science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = science.png; path = ../../../../Downloads/science.png; sourceTree = "<group>"; };
-		8271766223F2A2F6003E82D5 /* career.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = career.png; path = ../../../../Downloads/career.png; sourceTree = "<group>"; };
+		824B0BF823F2B66000121679 /* keizai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keizai.png; sourceTree = "<group>"; };
+		824B0BF923F2B66000121679 /* science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = science.png; sourceTree = "<group>"; };
+		824B0BFA23F2B66000121679 /* law.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = law.png; sourceTree = "<group>"; };
+		824B0BFB23F2B66000121679 /* math.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = math.png; sourceTree = "<group>"; };
+		824B0BFC23F2B66000121679 /* shizen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shizen.png; sourceTree = "<group>"; };
+		824B0BFE23F2B66100121679 /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
+		824B0BFF23F2B66100121679 /* programming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = programming.png; sourceTree = "<group>"; };
+		824B0C0023F2B66100121679 /* ningen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ningen.png; sourceTree = "<group>"; };
+		824B0C0123F2B66100121679 /* jikken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jikken.png; sourceTree = "<group>"; };
+		824B0C0223F2B66100121679 /* language.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = language.png; sourceTree = "<group>"; };
+		824B0C0323F2B66100121679 /* study.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = study.png; sourceTree = "<group>"; };
+		824B0C0423F2B66100121679 /* kenkyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kenkyu.png; sourceTree = "<group>"; };
+		824B0C0523F2B66100121679 /* seiji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seiji.png; sourceTree = "<group>"; };
+		824B0C0623F2B66100121679 /* tetsugaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tetsugaku.png; sourceTree = "<group>"; };
+		824B0C0723F2B66100121679 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		824B0C1823F2B67200121679 /* career.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = career.png; sourceTree = "<group>"; };
 		829FE96D23A872620085C0C9 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		829FE96F23A8770B0085C0C9 /* math.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = math.png; sourceTree = "<group>"; };
 		82BACE132399E5D900C6F525 /* CreditList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditList.swift; sourceTree = "<group>"; };
@@ -163,24 +167,26 @@
 			children = (
 				7A140A1D23F2789D008CA186 /* default.realm */,
 				7A140A1B23F15A91008CA186 /* study.png */,
+				824B0C0723F2B66100121679 /* music.png */,
+				824B0C0023F2B66100121679 /* ningen.png */,
 				821DAB7923A87A87006C1576 /* programming.png */,
+				824B0C0423F2B66100121679 /* kenkyu.png */,
 				821DAB7A23A87A87006C1576 /* language.png */,
 				829FE96F23A8770B0085C0C9 /* math.png */,
+				824B0C1823F2B67200121679 /* career.png */,
 				7A140A1923F15A8A008CA186 /* internship.png */,
-				8271763C23F29EA7003E82D5 /* ar.png */,
-				8271763A23F29EA7003E82D5 /* art.png */,
-				8271765223F2A24A003E82D5 /* keizai.png */,
-				8271763723F29EA7003E82D5 /* kenkyu.png */,
-				8271764E23F2A24A003E82D5 /* jikken.png */,
-				8271764923F2A24A003E82D5 /* music.png */,
-				8271764C23F2A24A003E82D5 /* ningen.png */,
-				8271764A23F2A24A003E82D5 /* law.png */,
-				8271765323F2A24A003E82D5 /* science.png */,
-				8271766223F2A2F6003E82D5 /* career.png */,
-				8271764D23F2A24A003E82D5 /* seiji.png */,
-				8271763823F29EA7003E82D5 /* shizen.png */,
-				8271763923F29EA7003E82D5 /* sports.png */,
-				8271763623F29EA7003E82D5 /* tetsugaku.png */,
+				824B0C0123F2B66100121679 /* jikken.png */,
+				824B0BF823F2B66000121679 /* keizai.png */,
+				824B0C0223F2B66100121679 /* language.png */,
+				824B0BFA23F2B66000121679 /* law.png */,
+				824B0BFB23F2B66000121679 /* math.png */,
+				824B0BFF23F2B66100121679 /* programming.png */,
+				824B0BF923F2B66000121679 /* science.png */,
+				824B0C0523F2B66100121679 /* seiji.png */,
+				824B0BFC23F2B66000121679 /* shizen.png */,
+				824B0BFE23F2B66100121679 /* sports.png */,
+				824B0C0323F2B66100121679 /* study.png */,
+				824B0C0623F2B66100121679 /* tetsugaku.png */,
 				82E3114523A1E26A0055E00D /* icon.png */,
 				82E3114723A1E3590055E00D /* icon20.png */,
 				82E3114923A1E4770055E00D /* icon29.png */,
@@ -349,42 +355,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E3115B23A1E4780055E00D /* icon80.png in Resources */,
-				8271765C23F2A24A003E82D5 /* jikken.png in Resources */,
 				82E3115F23A1E4780055E00D /* icon120.png in Resources */,
+				824B0C0B23F2B66100121679 /* math.png in Resources */,
 				82E3115C23A1E4780055E00D /* icon1024.png in Resources */,
 				82E3115523A1E4780055E00D /* icon29.png in Resources */,
-				8271765B23F2A24A003E82D5 /* seiji.png in Resources */,
 				82E3116023A1E4780055E00D /* icon40.png in Resources */,
-				8271764223F29EA7003E82D5 /* art.png in Resources */,
 				82E3115923A1E4780055E00D /* icon152.png in Resources */,
-				8271764023F29EA7003E82D5 /* shizen.png in Resources */,
-				8271766123F2A24A003E82D5 /* science.png in Resources */,
+				824B0C1623F2B66100121679 /* tetsugaku.png in Resources */,
+				824B0C1323F2B66100121679 /* study.png in Resources */,
+				824B0C0923F2B66100121679 /* science.png in Resources */,
 				82E3115E23A1E4780055E00D /* icon87.png in Resources */,
-				8271766023F2A24A003E82D5 /* keizai.png in Resources */,
+				824B0C0A23F2B66100121679 /* law.png in Resources */,
 				82E3114623A1E26A0055E00D /* icon.png in Resources */,
 				82E3114823A1E3590055E00D /* icon20.png in Resources */,
+				824B0C1523F2B66100121679 /* seiji.png in Resources */,
 				82E3115A23A1E4780055E00D /* icon167.png in Resources */,
-				8271765A23F2A24A003E82D5 /* ningen.png in Resources */,
-				8271765723F2A24A003E82D5 /* music.png in Resources */,
 				821DAB7C23A87A87006C1576 /* language.png in Resources */,
-				8271763F23F29EA7003E82D5 /* kenkyu.png in Resources */,
 				7A140A1C23F15A91008CA186 /* study.png in Resources */,
 				82E3115623A1E4780055E00D /* icon60.png in Resources */,
-				8271764123F29EA7003E82D5 /* sports.png in Resources */,
 				829FE97023A8770B0085C0C9 /* math.png in Resources */,
 				821DAB7B23A87A87006C1576 /* programming.png in Resources */,
 				82F3076D2398EBF800CE61B4 /* LaunchScreen.storyboard in Resources */,
-				8271764423F29EA7003E82D5 /* ar.png in Resources */,
+				824B0C1923F2B67200121679 /* career.png in Resources */,
 				7A140A1E23F2789D008CA186 /* default.realm in Resources */,
 				82E3115723A1E4780055E00D /* icon58.png in Resources */,
+				824B0C0823F2B66100121679 /* keizai.png in Resources */,
+				824B0C1423F2B66100121679 /* kenkyu.png in Resources */,
+				824B0C0C23F2B66100121679 /* shizen.png in Resources */,
+				824B0C0F23F2B66100121679 /* programming.png in Resources */,
+				824B0C0E23F2B66100121679 /* sports.png in Resources */,
 				82F3076A2398EBF800CE61B4 /* Preview Assets.xcassets in Resources */,
 				82F307672398EBF800CE61B4 /* Assets.xcassets in Resources */,
-				8271765823F2A24A003E82D5 /* law.png in Resources */,
+				824B0C1023F2B66100121679 /* ningen.png in Resources */,
+				824B0C1223F2B66100121679 /* language.png in Resources */,
 				7A140A1A23F15A8B008CA186 /* internship.png in Resources */,
-				8271763E23F29EA7003E82D5 /* tetsugaku.png in Resources */,
-				8271766323F2A2F6003E82D5 /* career.png in Resources */,
 				82E3115823A1E4780055E00D /* icon76.png in Resources */,
 				82E3115D23A1E4780055E00D /* icon180.png in Resources */,
+				824B0C1123F2B66100121679 /* jikken.png in Resources */,
+				824B0C1723F2B66100121679 /* music.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
