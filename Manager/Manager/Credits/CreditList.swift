@@ -9,22 +9,25 @@
 import SwiftUI
 
 struct CreditList: View {
-    @EnvironmentObject private var userData: UserData
-       
+    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var store: Store
+    
     var body: some View {
         List {
             Toggle(isOn: $userData.showCompletedOnly) {
                 Text("Show Completed Only")
             }
             
-            ForEach(userData.credits) { credit in
+            ForEach(store.credits, id: \.self) { credit in
+                ForEachBuilder {
                 if !self.userData.showCompletedOnly || credit.isCompleted {
                     NavigationLink(
-                        destination: CreditDetail(credit: credit)
-                            .environmentObject(self.userData)
+                        destination: CreditDetail(lecture: credit)
+                            .environmentObject(Store())
                     ) {
                         CreditRow(credit: credit)
                     }
+                }
                 }
             }
         }
@@ -32,11 +35,25 @@ struct CreditList: View {
     }
 }
 
+struct ForEachBuilder<Content>: View where Content: View {
+
+    private let content: Content
+
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    var body: some View {
+        content
+    }
+
+}
+
 struct CreditsList_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             CreditList()
         }
-        .environmentObject(UserData())
+        .environmentObject(Store())
     }
 }

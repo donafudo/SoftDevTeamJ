@@ -9,6 +9,8 @@
 import Foundation
 import RealmSwift
 
+let creditData: Results<Lectureinfo> = LectureDatabase.shared.LoadLecterList()
+
 class LectureDatabase {
     //singleton,使っていいかは微妙
     static let shared = LectureDatabase()
@@ -26,9 +28,18 @@ class LectureDatabase {
         if FileManager.default.fileExists(atPath: defaultRealmPath.path){
             return
         }
+        
         //データベースをコピー
         let bundleRealmPath = Bundle.main.url(forResource: dbfileName, withExtension: "realm")
+        
+        do{
+            try FileManager.default.removeItem(atPath: defaultRealmPath.path)
+        }catch let error {
+            
+        }
+        
         do {
+
             try FileManager.default.copyItem(at: bundleRealmPath!, to: defaultRealmPath)
         } catch let error {
             fatalError("error copying realm file: \(error)")
@@ -66,10 +77,9 @@ struct LectureList: View {
     @State var a:String="aa"
     var body: some View {
         VStack{
-            ForEach(userData.filter("name like '*情報*'"),id: \.self){data in
+            ForEach(userData.filter("attendanceGrade = 0"),id: \.self){data in
                 Text(data.name!)
             }
-
         }
     }
 }
