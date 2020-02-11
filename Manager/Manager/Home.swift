@@ -12,7 +12,7 @@ struct Home: View {
     var categories: [String: [Lectureinfo]] {
         Dictionary(
             grouping: creditData.sorted(byKeyPath: "id", ascending: true),
-            by: { $0.categoryType!.rawValue}
+            by: { $0.subjectType!.rawValue}
         )
     }
     
@@ -34,7 +34,7 @@ struct Home: View {
     
     var body: some View {
         NavigationView {
-            List {
+            ScrollView {
                 CompletedCredits(credits: randomLecture)
                     .scaledToFill()
                     .frame(height: 200)
