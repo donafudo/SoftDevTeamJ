@@ -35,7 +35,7 @@ class LectureDatabase {
         do{
             try FileManager.default.removeItem(atPath: defaultRealmPath.path)
         }catch let error {
-            
+            fatalError("error removing realm file: \(error)")
         }
         
         do {

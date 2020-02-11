@@ -9,7 +9,6 @@ import Foundation
 import CoreLocation
 import UIKit
 import SwiftUI
-//let creditData: [Credit] = load("creditData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
