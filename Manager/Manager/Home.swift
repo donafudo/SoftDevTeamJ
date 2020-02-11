@@ -12,7 +12,7 @@ struct Home: View {
     var categories: [String: [Lectureinfo]] {
         Dictionary(
             grouping: creditData.sorted(byKeyPath: "id", ascending: true),
-            by: { $0.subjectType!.rawValue}
+            by: { $0.subjectType?.rawValue ?? "不明"}
         )
     }
     
